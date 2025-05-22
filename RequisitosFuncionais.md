@@ -1,10 +1,9 @@
-- RF01 - Cadastro de usuário com e-mail e senha
-- RF02 - Cadastro de usuário com login Google
-- RF03 - Cadastro de usuário com login Facebook
-- RF04 - Registro de denúncia com tipo, descrição, localização
-- RF05 - Feedback sobre atendimento recebido
-- RF06 - Comunicação entre cidadão e órgão público
-- RF07 - Pesquisa de denúncias com filtros customizados
-- RF08 - Notificações push para atualizações sobre o status da denúncia
-- RF09 - Permitir a edição ou cancelamento de uma denúncia enquanto tiver o status "Sob Análise"
-- RF10 - Registro de data/hora de cada interação
+- RF01 - cadastrar um usuário 
+- RF02 - autenticar um usuário
+- RF03 - registrar uma denúncia/problema
+- RF04 - assinar/creditar uma denúncia já registrada
+- RF05 - gerar relatório sobre o problema
+- RF06 - cancelar uma denúncia registrada pelo próprio usuário
+- RF07 - responder a denúncia registrada
+- RF08 - pesquisar uma denúncia já registrada
+- RF09 - notificar o usuário acerca de atualizações sobre sua denúncia/probelma
