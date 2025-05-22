@@ -1,13 +1,11 @@
-- RNF01 - O sistema deve ter baixa latência e permitir até 1000 denúncias simultâneas
-- RNF02 - O sistema deve ter criptografia de ponta a ponta dos usuários
-- RNF03 - O sistema deve implementar a autenticação em dois fatores
-- RNF04 - O sistema deve garantir compliance com a LGPD.
+- RNF01 - O sistema deve possibililtar o cadastro do usuário por login com o Google e/ou Facebook
+- RNF02 - O sistema deve permitir que o usuário realize sua autenticação com o gov.br
+- RNF03 - O sistema deve ter baixa latência e permitir até 1000 denúncias simultâneas
+- RNF04 - O sistema deve ter criptografia de ponta a ponta dos usuários
 - RNF05 - A interface do sistema deve ser simples e acessível, funcionando de forma satisfatória em celulares e computadores
 - RNF06 - A interface do sistema deve ser intuitiva
-- RNF07 - O sistema deve ser confiável, com backups diários e capacidade de reboot em caso de falhas
-- RNF08 - O sistema deve ser escalável
-- RNF09 - O sistema deve ser de simples manutenção, com boa documentação de código
-- RNF10 - O sistema deve oferecer suporte a múltiplos idiomas
-- RNF11 - O sistema deve aceitar denúncias com formatos de arquivos variados (PDF, PNG, JPG, DOCX, MP4...)
-- RNF12 - O sistema deve oferecer suporte a leitores de tela, garantindo a participação de pessoas com deficiências visuais
-- RNF13 - O sistema deve permitir que usuários optem por visualizar seu conteúdo em alto contraste, visando melhor atender pessoas com distúrbios visuais 
+- RNF07 - O sistema deve ter baixa latência e permitir até 1000 denúncias simultâneas
+- RNF08 - O sistema deve oferecer suporte a múltiplos idiomas
+- RNF09 - As denúncias devem aceitar o anexo de arquivos com formatos variados (.pdf, .png, .jpg, .docx, .mp4 e etc)
+- RNF10 - O sistema deve conter configuração de interface para se adequar a acessibilidade
+- RNF11 - O sistema deve permitir filtros para as pesquisas, por data, tipo e órgão responsável
