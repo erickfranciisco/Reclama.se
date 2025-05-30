@@ -1,0 +1,41 @@
+@startuml
+abstract class User {
+- id: Integer <<PK>>
+- nome: String
+- cpf: String
+- email: String
+- telefone: String 
+- dataNascimento: DateTime
+- idDenuncia: 
+}
+
+class UserCidadão {
+}
+
+class Moderador
+
+UserCidadão -up-|> User
+Moderador -up-|> User
+
+class Entidade {
+  - id: Integer <<PK>>
+  - nome: String
+  - cnpj: String
+  - email: String
+  - telefone: String
+  - status: boolean 
+  - siteURL: String 
+  - dataFundado: DateTime
+  + responderDenuncia()
+  + responderFeedback()
+}
+
+
+class ÓrgãoPúblico
+class ÓrgãoPrivado
+
+ÓrgãoPúblico -up-|> Entidade
+ÓrgãoPrivado -up-|> Entidade
+
+class Denuncia {
+@enduml
