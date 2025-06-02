@@ -1,0 +1,35 @@
+@startuml
+state choice1 <<choice>>
+state fork1 <<fork>>
+
+state "Aguardando Autenticação" as AA
+state "Ativo" as A
+state "Denúncia Enviada" as DE
+state "Denúcia Analisada" as DA
+state "Editado" as EDT
+state "Excluído" as EXC
+state "Denúncia Confirmada" as DC
+state "Feedback Enviado" as FE
+state "Relatório Recebido" as RR
+state "Denúncia/Relatório Recebido" as DRR
+
+[*] --> fork1 : usuário
+fork1 --> AA
+AA --> A : Autenticação via gov.br
+A --> DE : Nova Denúncia
+DE --> DA : Análise de denúncia pela moderação
+
+fork1 --> DRR : órgão
+
+DA --> choice1
+choice1 --> DC: De acordo com\nas diretrizes
+choice1 --> EDT : Editado pelo usuário\nou pelos moderadores
+choice1 --> EXC : Excluído pelo usuário\nou pelos moderadores
+EXC --> [*]
+
+EDT --> A
+DC--> A
+
+A --> FE : Feedback acerca da órgão\ne dos serviços prestados
+DC --> RR : Relatório geral da denúncia
+@enduml
