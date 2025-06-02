@@ -1,9 +1,9 @@
-- RF01 - cadastrar um usuário 
-- RF02 - autenticar um usuário
-- RF03 - registrar uma denúncia/problema
-- RF04 - assinar/creditar uma denúncia já registrada
-- RF05 - gerar relatório sobre o problema
-- RF06 - cancelar uma denúncia registrada pelo próprio usuário
-- RF07 - responder a denúncia registrada
-- RF08 - pesquisar uma denúncia já registrada
-- RF09 - notificar o usuário acerca de atualizações sobre sua denúncia/probelma
+- RF01 – O sistema deve permitir o cadastro de um novo usuário.
+- RF02 – O sistema deve permitir que o usuário realize a autenticação.
+- RF03 – O sistema deve permitir o registro de uma denúncia por parte do usuário.
+- RF04 – O sistema deve permitir que o usuário assine/credite uma denúncia previamente registrada.
+- RF05 – O sistema deve ser capaz de gerar relatórios relacionados ao problema denunciado.
+- RF06 – O sistema deve permitir que o usuário cancele uma denúncia registrada por ele próprio.
+- RF07 – O sistema deve permitir que o órgão responsável registre uma resposta à denúncia.
+- RF08 – O sistema deve permitir a pesquisa de denúncias já registradas.
+- RF09 – O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
