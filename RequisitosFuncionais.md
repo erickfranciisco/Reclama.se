@@ -7,3 +7,4 @@
 - RF07 – O sistema deve permitir que o órgão responsável registre uma resposta à denúncia.
 - RF08 – O sistema deve permitir a pesquisa de denúncias já registradas.
 - RF09 – O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
+- RF10 – o sistema deve permitir que o usuário reaize um feedback acerca dos serviços prestados pelo órgão responsável após a denúncia. 
