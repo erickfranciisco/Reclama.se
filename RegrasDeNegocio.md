@@ -8,3 +8,4 @@
 - RDN08 - Após a denúncia, o órgão responsável deve ser contactado, recebendo o relatório completo gerado pelo sitema.
 - RDN09 - O sistema deve permitir que órgão realize uma resposta pública àquela denúncia
 - RDN10 - Caso as publicações realizadas pelo usuário não estejam de acordo com as diretrizes, o serviço de moderção deve ter a permissão de editar ou excluir as publicações. 
+- RDN11 - O feedback realizado pelo usuário acerca dos serviços prestados pela organização responsável pela resolução do problema relatado na denúncia, só deve ser permitido após o tempo mínimo de 7 dias da publicação da denúncia. 
