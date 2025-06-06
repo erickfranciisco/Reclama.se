@@ -1,41 +1,91 @@
 @startuml
 abstract class User {
-- id: Integer <<PK>>
-- nome: String
-- cpf: String
-- email: String
-- telefone: String 
-- dataNascimento: DateTime
-- idDenuncia: 
+  - id: Integer <<PK>>
+  - nome: String
+  - cpf: String
+  - email: String
+  - telefone: String 
+  - dataNascimento: DateTime
 }
 
-class UserCidadão {
+class UserCidadao {
+  - denunciasEnviadas: List<Denuncia> 
+  - feedbacksEnviados: List<Feedback>
+  - denunciasCreditadas: List<Denuncia>
+  + registrarDenuncia(): Mensagem
+  + registrarFeedback(): Mensagem
+  + creditarDenuncia(): void
 }
 
-class Moderador
+class Moderador {
+  - dataAdmissao: DateTime
+  - dataDemissao: DateTime
+  - ativo: boolean
+}
 
-UserCidadão -up-|> User
+UserCidadao -up-|> User
 Moderador -up-|> User
 
 class Entidade {
   - id: Integer <<PK>>
   - nome: String
-  - cnpj: String
   - email: String
   - telefone: String
-  - status: boolean 
+  - statusAtivo: boolean 
   - siteURL: String 
   - dataFundado: DateTime
-  + responderDenuncia()
-  + responderFeedback()
+  - denunciasRecebidas: List<Denuncia>
+  + responderDenuncia(): Denuncia
+  + responderFeedback(): Feedback
 }
 
 
-class ÓrgãoPúblico
-class ÓrgãoPrivado
+class EntidadePublica {
+} 
 
-ÓrgãoPúblico -up-|> Entidade
-ÓrgãoPrivado -up-|> Entidade
+class EntidadePrivada {
+  - cnpj: String
+}
+
+EntidadePublica -up-|> Entidade
+EntidadePrivada -up-|> Entidade
+
+class Mensagem {
+  - id: Integer <<PK>>
+  - titulo: String
+  - descricao: String
+  - denuncianteId: Integer
+  - tipo: String 
+  - data: DateTime
+}
 
 class Denuncia {
+  - denuncianteId: Integer
+  + gerarRelatorio(): void
+}
+
+class Feedback {
+  - denunciaId: Integer
+  - denuncianteId: Integer
+  - entidadeId: Integer
+}
+
+Denuncia -up-|> Mensagem
+Feedback -up-|> Mensagem 
+
+enum StatusDenuncia {
+  EM_ANALISE
+  REGISTRADA
+  SEM_RESPOSTA
+  EM_SOLUCAO
+  SOLUCIONADA
+}
+
+Denuncia --> StatusDenuncia : 1..1
+UserCidadao "1..*" --> "1..*" Denuncia : envia
+UserCidadao "1..*" --> "1..*" Feedback : envia
+Entidade "1..*" --> "1..*" Denuncia : recebe
+Entidade "1..*" --> "1..*" Feedback : responde
+Denuncia "1..*" --> "1..*" Feedback : gera
+
 @enduml
