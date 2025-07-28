@@ -55,10 +55,11 @@ A plataforma terá três tipos de usuários principais:
   - Título;
   - Data/Hora;
   - Descrição (definido pelo cidadão);
+  - Evidências (arquivos de mídia diversas);
   - Tipo;
   - Status;
   - Setores atendidos (área de atuação);
-  - Endereço completo com UF e Município.
+  - Endereço completo com UF e Município;
 - **RN-018:** Após o envio da denúncia realizada pelo cidadão, ela será direcionada para o serviço de moderação da plataforma, na qual será responsável por avaliar se o conteúdo da denúncia está de acordo com as diretrizes.
 - **RN-019:** Uma denúncia só poderá ser respondida pelo Órgão Responsável, se já estiver avaliada positivamente pelo serviço de moderação.   
 - **RN-020:** O sistema deve manter os dados do cidadão (o denunciante) totalmente ocultos - sem exibição para o público ou para os órgãos - tanto na plataforma, quanto nas mídias enviadas por ela, mesmo que a publicação da denúncia seja autorizada após a etapa de moderação mencionado na RN-013.
@@ -111,7 +112,8 @@ A avaliação deve seguir os seguintes estados:
 - **RN-028:** O sistema deve impedir qualquer tentativa de manipulação indevida do conteúdo do relatório, garantindo sua integridade.
 - **RN-029:** Cada versão do relatório deve ser versionada e armazenada no banco de dados, com controle de data e responsável pela alteração.
 - **RN-030:** O relatório deve ser enviado automaticamente ao órgão responsável assim que ele for atribuído à denúncia, respeitando as regras de privacidade de dados.
-
+- **RN-031:** Caso a denúncia não seja aprovada na avaliação de moderação, o relatório não deve ser exibido ao órgão responsável, além disso deve ser enviado uma notificação de bloqueio de denúncia.
+  
 ---
 
 ## 4. Regras de Feedback
@@ -131,3 +133,23 @@ A avaliação deve seguir os seguintes estados:
   - Grau de satisfação geral (Muito insatisfeito a Muito satisfeito).
 
 ---
+
+## 5. Pesquisa e Navegação
+
+### 5.1 Denúncias
+
+- **RN-036:** A exibição de outras denúncias publicadas deve priorizar denúncias da mesma localidade (e proximidades) e/ou do mesmo tipo da denúncia visualizada pelo cidadão, em ordem de data/hora mais recente.
+- **RN-037:** A pesquisa textual por título deve ser feita com correspondência parcial (contendo as palavras), sem diferenciação de maiúsculas e minúsculas.
+- **RN-038:** Filtros de pesquisa ou exibição de denúncias devem possuir no mínimo um dos seguintes parâmetros:.
+  - Localidade (UF, cidade ou CEP);
+  - Data de Registro;
+  - Status;
+  - Tipo;
+  - Setor Responsável;
+  - Órgão;
+  - Título;
+- **RN-039:**
+
+## 6. Regras de Notificação e Comunicação
+
+
