@@ -74,19 +74,31 @@ A plataforma terá três tipos de usuários principais:
 - **RN-024:** Denúncias que com o status de "Bloqueada", não devem ser excluídas permanentemente do sistema. Todas as denúncias com esse status devem ter somente sua visibilidade bloqueada para os seguintes usuários: órgãos, cidadãos.
 - **RN-025:** Denúncias que com o status de "Cancelada", não podem ser visíveis por nenhum usuário, a não ser seu autor.
 
-### 2.3. Ciclo de Vida da Denúncia
+### 2.3. Crédito de Denúncia (Abaixo-Assinado)
+
+- **RN-026:** Apenas cidadãos autenticados podem assinar/creditar uma denúncia.
+- **RN-027:** O crédito deve ser único, a denúncia só pode ser creditada uma vez por usuário. 
+- **RN-028:** O cidadão não pode assinar denúncias de sua própria autoria.
+- **RN-029:** As denúncias que possuem os seguintes status **não** devem possuir a opção de crédito: **Oculta**, **Cancelada**, **Excluída**, **Bloqueada**.
+
+### 2.4. Ciclo de Vida da Denúncia
 
 A denúncia terá os seguintes status:
 
 1.  **Publicada:** Denúncia enviada pelo cidadão. Visível para todos os usuários.
-2.  **Aprovada:** A denúncia não infligiu nenhuma diretriz, segundo o processo de aprovação pelo serviço de moderação.
-3.  **Editada:** A denúncia não cumpriu alguma(s) das diretrizes, resultando em sua edição pelos moderadores. 
-4.  **Bloqueada (Excluída):** A denúncia não cumpriu alguma(s) das diretrizes, resultando no bloqueio da sua visibilidade após a moderação.
-5.  **Em Solução:** A denúncia previamente aprovada, está em proceso de solucionamento. 
-6.  **Solucionada:** Os parâmetros apontados na denúncia foram corrigidos pelo serviço público.
-7.  **Cancelada:** O cidadão cancela a publicação da denúncia.
-8.  **Oculta:** O cidadão oculta a visibilidade de uma denúncia.
-9.  **Excluída:** A denúncia é excluída do banco de dados.
+2.  **Em Solução:** A denúncia previamente aprovada, está em proceso de solucionamento. 
+3.  **Solucionada:** Os parâmetros apontados na denúncia foram corrigidos pelo serviço público.
+4.  **Cancelada:** O cidadão cancela a publicação da denúncia.
+5.  **Oculta:** O cidadão oculta a visibilidade de uma denúncia.
+6.  **Excluída:** A denúncia é excluída do banco de dados.
+
+### 2.5. Status de Avaliação de Denúncia
+
+A avaliação deve seguir os seguintes estados:
+
+1.  **Aprovada:** A denúncia não infligiu nenhuma diretriz, segundo o processo de aprovação pelo serviço de moderação.
+2. **Editada:** A denúncia foi aprovada, porém não cumpriu alguma(s) das diretrizes, resultando em sua edição pelos moderadores. 
+3. **Bloqueada:** A denúncia não cumpriu alguma(s) das diretrizes, resultando no bloqueio da sua visibilidade após a moderação.
 
 ---
 
