@@ -111,7 +111,7 @@ A denúncia terá os seguintes status:
 - **RN-033:** Um feedback já existente, pode ser editado pelo usuário após atualizações do caso.
 - **RN-034:** Os dados do cidadão (denunciante) devem ser totalmente ocultos durante a descrição do feedback.
 
-### 4.2. Formulação do Feedback
+### 4.2. Funcionalidade do Feedback
 
 - **RN-035:** O feedback deve conter os seguintes parâmetros obrigatórios:.
   - Nota de 1 a 5 estrelas (avaliação do atendimento);
