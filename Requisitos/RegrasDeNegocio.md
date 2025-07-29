@@ -54,7 +54,7 @@ A plataforma terá três tipos de usuários principais:
 - **RN-016:** Cada denúncia deve conter os seguites dados básicos:.
   - Título;
   - Data/Hora;
-  - Descrição (definido pelo cidadão);
+  - Descrição definida pelo cidadão (máximo de 1024 caracteres);
   - Evidências (arquivos de mídia diversas);
   - Tipo;
   - Status;
@@ -62,7 +62,7 @@ A plataforma terá três tipos de usuários principais:
   - Endereço completo com UF e Município;
 - **RN-017:** Após o envio da denúncia realizada pelo cidadão, ela será direcionada para o serviço de moderação da plataforma, na qual será responsável por avaliar se o conteúdo da denúncia está de acordo com as diretrizes.
 - **RN-018:** Uma denúncia só poderá ser respondida pelo Órgão Responsável, se já estiver avaliada positivamente pelo serviço de moderação.   
-- **RN-019:** O sistema deve manter os dados do cidadão (o denunciante) totalmente ocultos - sem exibição para o público ou para os órgãos - tanto na plataforma, quanto nas mídias enviadas por ela, mesmo que a publicação da denúncia seja autorizada após a etapa de moderação mencionado na RN-013.
+- **RN-019:** O sistema deve manter os dados do cidadão (o denunciante) totalmente ocultos - sem exibição para o público ou para os órgãos - tanto na plataforma, quanto nas mídias enviadas por ela, mesmo que a publicação da denúncia seja autorizada após a etapa de moderação mencionado na **RN-017**.
 - **RN-020:** Após a denúncia, o usuário deve receber uma confirmação automática e um número de protocolo.
 - **RN-021:** Caso as publicações realizadas pelos usuários (cidadãos e/ou órgãos) não estejam de acordo com as diretrizes, o serviço de moderção deve ter a permissão de editar ou excluir as publicações.
 - **RN-022:** Condições que impedem um denúncia de ser cancelada:.
@@ -107,7 +107,7 @@ A avaliação deve seguir os seguintes estados:
 
 ### 3.1. Formulação do Relatório 
 
-- **RN-029:** Após a denúncia, o sistema deve gerar um relatório automaticamente com os dados básicos definidos na RN-012. O relatório deve atender a RN-015 de sigilo e proteção ao cidadão, ocultando sua identidade no relatório.  
+- **RN-029:** Após a denúncia, o sistema deve gerar um relatório automaticamente com os dados básicos definidos na **RN-016**. O relatório deve atender a **RN-019** de sigilo e proteção ao cidadão, ocultando sua identidade no relatório.  
 - **RN-030:** O relatório deve ser atualizado automaticamente a cada nova movimentação da denúncia.
 - **RN-031:** O sistema deve impedir qualquer tentativa de manipulação indevida do conteúdo do relatório, garantindo sua integridade.
 - **RN-032:** Cada versão do relatório deve ser versionada e armazenada no banco de dados, com controle de data e responsável pela alteração.
@@ -148,8 +148,7 @@ A avaliação deve seguir os seguintes estados:
   - Setor Responsável;
   - Órgão;
   - Título;
-- **RN-043:**
+
+---
 
 ## 6. Regras de Notificação e Comunicação
-
-
