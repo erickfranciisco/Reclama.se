@@ -22,7 +22,7 @@ A plataforma terá três tipos de usuários principais:
   - CEP;
   - Senha;
 - **RN-003:** Somente email, CPF/CNPJ, CEP e telefone válidos devem ser aceitos e registrados pelo sistema. 
-- **RN-004:** Somente CPF/CNPJ únicos devem ser registrados por usuário, seja cidadão ou órgão. 
+- **RN-004:** CPF/CNPJ devem ser únicos por usuário. 
 - **RN-005:** Somente usuários cadastrados e autenticados devem ter permissão para editar/excluir qualquer conteúdo informado ou publicado no sistema.
 - **RN-006:** A redefinição de senha só deve ser possível através de uma conta cadastrada e autenticada. Posteriormente, deve-se enviar um emial de alteração de senha para o endereço cadastrado.   
 
