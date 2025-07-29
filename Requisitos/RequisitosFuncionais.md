@@ -11,7 +11,7 @@
 - **RF-003:** O sistema deve confirmar a veracidade das informações do usuário com um código de validação enviado via email e/ou SMS. Caso o código de validação não seja equivalente ao enviado, o sistema deve impossibilitar o cadastro, informando ao usuário.
 
 #### 1.2. Cadastro de Órgãos
-- **RF-004:** O sistema deve permitir o cadastro de um novo Órgão público ou privado, seguindo a **RN-009**.
+- **RF-004:** O sistema deve permitir o cadastro de um novo órgão público ou privado, seguindo as **RN-007**, **RN-008** e **RN-009**.
 - **RF-005:** 
 - **RF-006:** 
 
@@ -19,18 +19,18 @@
 
 - **RF-007:** O sistema deve permitir que o usuário faça login utilizando a conta do gov.br.
 - **RF-008:** O sistema deve encerrar automaticamente sessões inativas após 15 minutos de inatividade.
-- **RF-010:** O sistema deve permitir login simultâneo em no máximo um dispositivo por vez para cidadãos.
-- **RF-011:** O sistema deve bloquear tentativas de login após 5 falhas consecutivas por 15 minutos.
-- **RF-012:** O sistema deve enviar uma mensagem ao email cadastrado após 5 tentativas falhas.
-- **RF-013:** O sistema deve registrar logs de autenticação com data, hora e IP de origem.
-- **RF-014:** O sistema deve fornececer uma funcionalidade de recuperação de acesso à conta. 
+- **RF-009:** O sistema deve permitir login simultâneo em no máximo um dispositivo por vez para cidadãos.
+- **RF-010:** O sistema deve bloquear tentativas de login após 5 falhas consecutivas por 15 minutos.
+- **RF-011:** O sistema deve enviar uma mensagem ao email cadastrado após 5 tentativas falhas.
+- **RF-012:** O sistema deve registrar logs de autenticação com data, hora e IP de origem.
+- **RF-013:** O sistema deve fornececer uma funcionalidade de recuperação de acesso à conta. 
 
 ### 1.4. Gerenciamento de Perfil
 
-- **RF-009:** O sistema deve permitir a edição dos dados de qualquer usuário, somente pelo próprio usuário autenticado, desde que não infrinja a regra de negócio **RN-005**.
-- **RF-010:** O sistema deve permitir a desativação de órgãos - tanto pelo administrador, quanto pelo próprio órgão, desde que siga a **RN-011** -, impedindo o recebimento de novas denúncias.
-- **RF-011:** O sistema deve permitir a redefinição de senha para usuários com e-mail cadastrado, segundo a **RN-006**.
-- **RF-012:** 
+- **RF-015:** O sistema deve permitir a edição dos dados de qualquer usuário, somente pelo próprio usuário autenticado, desde que não infrinja a regra de negócio **RN-005**.
+- **RF-016:** O sistema deve permitir a desativação de órgãos - tanto pelo administrador, quanto pelo próprio órgão, desde que siga a **RN-011** -, impedindo o recebimento de novas denúncias.
+- **RF-017:** O sistema deve permitir a redefinição de senha para usuários com e-mail cadastrado, segundo a **RN-006**.
+- **RF-018:** 
 
 ---
 
@@ -38,21 +38,21 @@
 
 ### 2.1. Registro de Denúncias
 
-- **RF-013:** O sistema deve permitir o registro de uma denúncia por parte do cidadão.
-- **RF-014:** O sistema deve permitir que o cidadão assine/credite uma denúncia anteriormente registrada.
-- **RF-015:** O sistema deve permitir que o cidadão cancele uma denúncia registrada por ele próprio.
-- **RF-016:** O sistema deve permitir que o cidadão edite/exclua uma denúncia já publicada por si próprio.
-- **RF-017:** O sistema deve permitir o cancelamento do crédito já realizado de uma denúncia.
-- **RF-018:** O sistema deve permitir que um cidadão oculte a visibilidade de uma denúncia para os demais usuários (cidadãos e órgãos públicos).
-- **RF-019:** O sistema deve exibir somente a localidade (por CEP) dos usuários que creditaram uma denúncia específica e quantidade de créditos recebidos. Informações que não dizem respeito a localidade e a quantidade de créditos, não devem ser exibidas.
-- **RF-023:** O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
-- **RF-024:** O sistema deve apresentar ao cidadão, um histórico de suas denúncias enviadas.
-- **RF-025:**  O sistema deve apresentar ao órgão, um histórico de suas denúncias recebidas.
+- **RF-019:** O sistema deve permitir o registro de uma denúncia por parte do cidadão.
+- **RF-020:** O sistema deve permitir que o cidadão assine/credite uma denúncia anteriormente registrada.
+- **RF-021:** O sistema deve permitir que o cidadão cancele uma denúncia registrada por ele próprio.
+- **RF-022:** O sistema deve permitir que o cidadão edite/exclua uma denúncia já publicada por si próprio.
+- **RF-023:** O sistema deve permitir o cancelamento do crédito já realizado de uma denúncia.
+- **RF-024:** O sistema deve permitir que um cidadão oculte a visibilidade de uma denúncia para os demais usuários (cidadãos e órgãos públicos).
+- **RF-025:** O sistema deve exibir somente a localidade (por CEP) dos usuários que creditaram uma denúncia específica e quantidade de créditos recebidos. Informações que não dizem respeito a localidade e a quantidade de créditos, não devem ser exibidas.
+- **RF-026:** O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
+- **RF-027:** O sistema deve apresentar ao cidadão, um histórico de suas denúncias enviadas.
+- **RF-028:**  O sistema deve apresentar ao órgão, um histórico de suas denúncias recebidas.
 
 ### 2.2. Pesquisa e Navegação
 
-- **RF-020:** O sistema deve exibir aos cidadãos uma seção de outras denúncias publicadas.
-- **RF-021:** O sistema deve possibilitar o qualquer usuário de filtrar as denúncias por:.
+- **RF-029:** O sistema deve exibir aos cidadãos uma seção de outras denúncias publicadas.
+- **RF-030:** O sistema deve possibilitar o qualquer usuário de filtrar as denúncias por:.
   - Localidade (UF, cidade ou CEP);
   - Data de Registro;
   - Status;
@@ -60,26 +60,26 @@
   - Setor Responsável;
   - Órgão;
   - Título;
-- **RF-022:** O sistema deve permitir a pesquisa de denúncias já registradas. As pesquisas devem ser mediadas por no mínimo um (1) dos parâmetros de filtro determinados no **RF-021:**.
-- **RF-026:** 
-- **RF-027:** 
+- **RF-031:** O sistema deve permitir a pesquisa de denúncias já registradas. As pesquisas devem ser mediadas por no mínimo um (1) dos parâmetros de filtro determinados no **RF-030:**.
+- **RF-032:** 
+- **RF-033:** 
   
 ### 2.3. Relatório da Denúncia
 
-- **RF-024:** O sistema deve gerar um relatório geral da denúncia, segundo suas reras de negócio (da 26 a 31).
-- **RF-025:** O relatório deve ser anexado à denúncia que será enviada ao órgão responsável pela análise e resolução do problema.
-- **RF-026:** 
-- **RF-027:** 
-- **RF-028:** 
+- **RF-034:** O sistema deve gerar um relatório geral da denúncia, segundo suas reras de negócio (da 26 a 31).
+- **RF-035:** O relatório deve ser anexado à denúncia que será enviada ao órgão responsável pela análise e resolução do problema.
+- **RF-036:** 
+- **RF-037:** 
+- **RF-038:** 
 
 ---
 
 ## 3. Feedback
 
-- **RF-028:** O sistema deve permitir que seja realizado uma 
-- **RF-029:** 
-- **RF-030:** 
-- **RF-031:** 
+- **RF-039:** O sistema deve permitir que seja realizado uma 
+- **RF-040:** 
+- **RF-041:** 
+- **RF-042:** 
 
 ---
 
@@ -87,7 +87,7 @@
 
 ### 4.1. Atualizações de denúncias
 
-- **RF-023:** O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
+- **RF-043:** O sistema deve notificar o usuário sobre atualizações relacionadas à sua denúncia.
 
 ---
 
