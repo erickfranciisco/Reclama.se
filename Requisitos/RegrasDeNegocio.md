@@ -41,8 +41,8 @@ A plataforma terá três tipos de usuários principais:
 - **RN-010:** Os dados do responsável institucional devem ser protegidos e não devem ser acessíveis.
 - **RN-011:** O órgão será automaticamente notificado sempre que receber uma nova denúncia atribuída a ele.
 - **RN-012:** O órgão deve ser capaz de atualizar suas informações cadastrais, desde que autorizado e com autenticação segura.
-- **RN-014:** O sistema deve manter um histórico versionado das alterações cadastrais dos órgãos responsáveis, com data, autor da alteração e conteúdo antigo/novo.
-- **RN-015:** O órgão pode requerir sua desativação de conta, o que será encaminhado para o serviço de moderação.
+- **RN-013:** O sistema deve manter um histórico versionado das alterações cadastrais dos órgãos responsáveis, com data, autor da alteração e conteúdo antigo/novo.
+- **RN-014:** O órgão pode requerir sua desativação de conta, o que será encaminhado para o serviço de moderação.
   
 ---
 
@@ -50,8 +50,8 @@ A plataforma terá três tipos de usuários principais:
 
 ### 2.1. Registro de Denúncia 
 
-- **RN-016:** O cidadão só poderá registrar denúncias se estiver autenticado e cadastrado.
-- **RN-017:** Cada denúncia deve conter os seguites dados básicos:.
+- **RN-015:** O cidadão só poderá registrar denúncias se estiver autenticado e cadastrado.
+- **RN-016:** Cada denúncia deve conter os seguites dados básicos:.
   - Título;
   - Data/Hora;
   - Descrição (definido pelo cidadão);
@@ -60,27 +60,27 @@ A plataforma terá três tipos de usuários principais:
   - Status;
   - Setores atendidos (área de atuação);
   - Endereço completo com UF e Município;
-- **RN-018:** Após o envio da denúncia realizada pelo cidadão, ela será direcionada para o serviço de moderação da plataforma, na qual será responsável por avaliar se o conteúdo da denúncia está de acordo com as diretrizes.
-- **RN-019:** Uma denúncia só poderá ser respondida pelo Órgão Responsável, se já estiver avaliada positivamente pelo serviço de moderação.   
-- **RN-020:** O sistema deve manter os dados do cidadão (o denunciante) totalmente ocultos - sem exibição para o público ou para os órgãos - tanto na plataforma, quanto nas mídias enviadas por ela, mesmo que a publicação da denúncia seja autorizada após a etapa de moderação mencionado na RN-013.
-- **RN-021:** Após a denúncia, o usuário deve receber uma confirmação automática e um número de protocolo.
-- **RN-022:** Caso as publicações realizadas pelos usuários (cidadãos e/ou órgãos) não estejam de acordo com as diretrizes, o serviço de moderção deve ter a permissão de editar ou excluir as publicações.
-- **RN-023:** Condições que impedem um denúncia de ser cancelada:.
+- **RN-017:** Após o envio da denúncia realizada pelo cidadão, ela será direcionada para o serviço de moderação da plataforma, na qual será responsável por avaliar se o conteúdo da denúncia está de acordo com as diretrizes.
+- **RN-018:** Uma denúncia só poderá ser respondida pelo Órgão Responsável, se já estiver avaliada positivamente pelo serviço de moderação.   
+- **RN-019:** O sistema deve manter os dados do cidadão (o denunciante) totalmente ocultos - sem exibição para o público ou para os órgãos - tanto na plataforma, quanto nas mídias enviadas por ela, mesmo que a publicação da denúncia seja autorizada após a etapa de moderação mencionado na RN-013.
+- **RN-020:** Após a denúncia, o usuário deve receber uma confirmação automática e um número de protocolo.
+- **RN-021:** Caso as publicações realizadas pelos usuários (cidadãos e/ou órgãos) não estejam de acordo com as diretrizes, o serviço de moderção deve ter a permissão de editar ou excluir as publicações.
+- **RN-022:** Condições que impedem um denúncia de ser cancelada:.
   - Respondida pelo órgão responsável;
   - Status definido como "Em_Solução" ou "Solucionado";
   - Status definido como "Bloqueada", uma vez que sua visibilidade foi reduzida. 
 
 ### 2.2. Visibilidade da Denúncia
 
-- **RN-024:** Denúncias que com o status de "Bloqueada", não devem ser excluídas permanentemente do sistema. Todas as denúncias com esse status devem ter somente sua visibilidade bloqueada para os seguintes usuários: órgãos, cidadãos.
-- **RN-025:** Denúncias que com o status de "Cancelada", não podem ser visíveis por nenhum usuário, a não ser seu autor.
+- **RN-023:** Denúncias que com o status de "Bloqueada", não devem ser excluídas permanentemente do sistema. Todas as denúncias com esse status devem ter somente sua visibilidade bloqueada para os seguintes usuários: órgãos, cidadãos.
+- **RN-024:** Denúncias que com o status de "Cancelada", não podem ser visíveis por nenhum usuário, a não ser seu autor.
 
 ### 2.3. Crédito de Denúncia (Abaixo-Assinado)
 
-- **RN-026:** Apenas cidadãos autenticados podem assinar/creditar uma denúncia.
-- **RN-027:** O crédito deve ser único, a denúncia só pode ser creditada uma vez por usuário. 
-- **RN-028:** O cidadão não pode assinar denúncias de sua própria autoria.
-- **RN-029:** As denúncias que possuem os seguintes status **não** devem possuir a opção de crédito: **Oculta**, **Cancelada**, **Excluída**, **Bloqueada**.
+- **RN-025:** Apenas cidadãos autenticados podem assinar/creditar uma denúncia.
+- **RN-026:** O crédito deve ser único, a denúncia só pode ser creditada uma vez por usuário. 
+- **RN-027:** O cidadão não pode assinar denúncias de sua própria autoria.
+- **RN-028:** As denúncias que possuem os seguintes status **não** devem possuir a opção de crédito: **Oculta**, **Cancelada**, **Excluída**, **Bloqueada**.
 
 ### 2.4. Ciclo de Vida da Denúncia
 
@@ -107,12 +107,12 @@ A avaliação deve seguir os seguintes estados:
 
 ### 3.1. Formulação do Relatório 
 
-- **RN-026:** Após a denúncia, o sistema deve gerar um relatório automaticamente com os dados básicos definidos na RN-012. O relatório deve atender a RN-015 de sigilo e proteção ao cidadão, ocultando sua identidade no relatório.  
-- **RN-027:** O relatório deve ser atualizado automaticamente a cada nova movimentação da denúncia.
-- **RN-028:** O sistema deve impedir qualquer tentativa de manipulação indevida do conteúdo do relatório, garantindo sua integridade.
-- **RN-029:** Cada versão do relatório deve ser versionada e armazenada no banco de dados, com controle de data e responsável pela alteração.
-- **RN-030:** O relatório deve ser enviado automaticamente ao órgão responsável assim que ele for atribuído à denúncia, respeitando as regras de privacidade de dados.
-- **RN-031:** Caso a denúncia não seja aprovada na avaliação de moderação, o relatório não deve ser exibido ao órgão responsável, além disso deve ser enviado uma notificação de bloqueio de denúncia.
+- **RN-029:** Após a denúncia, o sistema deve gerar um relatório automaticamente com os dados básicos definidos na RN-012. O relatório deve atender a RN-015 de sigilo e proteção ao cidadão, ocultando sua identidade no relatório.  
+- **RN-030:** O relatório deve ser atualizado automaticamente a cada nova movimentação da denúncia.
+- **RN-031:** O sistema deve impedir qualquer tentativa de manipulação indevida do conteúdo do relatório, garantindo sua integridade.
+- **RN-032:** Cada versão do relatório deve ser versionada e armazenada no banco de dados, com controle de data e responsável pela alteração.
+- **RN-033:** O relatório deve ser enviado automaticamente ao órgão responsável assim que ele for atribuído à denúncia, respeitando as regras de privacidade de dados.
+- **RN-034:** Caso a denúncia não seja aprovada na avaliação de moderação, o relatório não deve ser exibido ao órgão responsável, além disso deve ser enviado uma notificação de bloqueio de denúncia.
   
 ---
 
@@ -120,14 +120,14 @@ A avaliação deve seguir os seguintes estados:
 
 ### 4.1. Publicação de Feedback
 
-- **RN-031:** O sistema deve permitir que o cidadão avalie o atendimento prestado pelo órgão após tempo mínimo de 7 dias corridos da data de publicação da denúncia.
-- **RN-032:** O feedback deve estar vinculado à denúncia original e ser permitido apenas uma vez por denúncia registrada, impossibilitando o cidadão de gerar múltiplas avaliações do mesmo caso.
-- **RN-033:** Um feedback já existente, pode ser editado pelo usuário após atualizações do caso.
-- **RN-034:** Os dados do cidadão (denunciante) devem ser totalmente ocultos durante a descrição do feedback.
+- **RN-035:** O sistema deve permitir que o cidadão avalie o atendimento prestado pelo órgão após tempo mínimo de 7 dias corridos da data de publicação da denúncia.
+- **RN-036:** O feedback deve estar vinculado à denúncia original e ser permitido apenas uma vez por denúncia registrada, impossibilitando o cidadão de gerar múltiplas avaliações do mesmo caso.
+- **RN-037:** Um feedback já existente, pode ser editado pelo usuário após atualizações do caso.
+- **RN-038:** Os dados do cidadão (denunciante) devem ser totalmente ocultos durante a descrição do feedback.
 
 ### 4.2. Funcionalidade do Feedback
 
-- **RN-035:** O feedback deve conter os seguintes parâmetros obrigatórios:.
+- **RN-039:** O feedback deve conter os seguintes parâmetros obrigatórios:.
   - Nota de 1 a 5 estrelas (avaliação do atendimento);
   - Descrição textual (máximo de 1024 caracteres);
   - Grau de satisfação geral (Muito insatisfeito a Muito satisfeito).
@@ -138,9 +138,9 @@ A avaliação deve seguir os seguintes estados:
 
 ### 5.1 Denúncias
 
-- **RN-036:** A exibição de outras denúncias publicadas deve priorizar denúncias da mesma localidade (e proximidades) e/ou do mesmo tipo da denúncia visualizada pelo cidadão, em ordem de data/hora mais recente.
-- **RN-037:** A pesquisa textual por título deve ser feita com correspondência parcial (contendo as palavras), sem diferenciação de maiúsculas e minúsculas.
-- **RN-038:** Filtros de pesquisa ou exibição de denúncias devem possuir no mínimo um dos seguintes parâmetros:.
+- **RN-040:** A exibição de outras denúncias publicadas deve priorizar denúncias da mesma localidade (e proximidades) e/ou do mesmo tipo da denúncia visualizada pelo cidadão, em ordem de data/hora mais recente.
+- **RN-041:** A pesquisa textual por título deve ser feita com correspondência parcial (contendo as palavras), sem diferenciação de maiúsculas e minúsculas.
+- **RN-042:** Filtros de pesquisa ou exibição de denúncias devem possuir no mínimo um dos seguintes parâmetros:.
   - Localidade (UF, cidade ou CEP);
   - Data de Registro;
   - Status;
@@ -148,7 +148,7 @@ A avaliação deve seguir os seguintes estados:
   - Setor Responsável;
   - Órgão;
   - Título;
-- **RN-039:**
+- **RN-043:**
 
 ## 6. Regras de Notificação e Comunicação
 
